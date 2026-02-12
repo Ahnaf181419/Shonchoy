@@ -79,6 +79,13 @@ Most finance apps are **too slow**. They ask for too many details, require inter
 - **Offline First:** 100% local data ownership. No servers, no accounts.
 - **Dark Mode:** System-wide support.
 
+### 6. Budget Planner
+
+- **New Module:** Added BudgetPlannerScreen accessible via Settings.
+- **Architecture:** Implemented a separate Hive Box (budget_plan_box) to ensure planning data never interferes with actual transaction history.
+- **Dynamic Dashboard:** Reused the core Dashboard UI components to visualize "Planned Income" vs. "Planned Expenses."
+- **Custom Inputs:** Users can now assign budgets to specific custom names (Strings) rather than fixed Category Enums, allowing for granular planning (e.g., separating "Groceries" from "Snacks").
+
 ---
 
 ## 📱 Screenshots
