@@ -20,7 +20,7 @@
   </a>
 </p>
 <p align="center">
-  <small><i>v1.0.0 • No Account Required • Free Forever!</i></small>
+  <small><i>v3.0.0 • No Account Required</i></small>
 </p>
 
 <p align="center">
@@ -30,65 +30,88 @@
 
 ---
 
-## 🧐 Why Another Expense Tracker?
+## Why Another Expense Tracker?
 
-Most finance apps are **too slow**. They ask for too many details, require internet, or force you to create an account.
+Most finance apps are **too slow**. They ask for too many details, require internet, or force you to create an account. Shonchoy ensures your information remains completely private.
 
 **Shonchoy is different.** It is built for **velocity**.
 
 - **No Login:** Open the app and start immediately.
 - **No Loading:** Everything is stored on your phone.
-- **No ads:** Just you and your finances.
+- **No Ads:** Just you and your finances.
 
 > _"If logging a coffee takes more than 5 seconds, you won't do it. Shonchoy fixes that."_
 
 ---
 
-## ✨ Features You'll Actually Use
+## Features
 
-### 1. The "3-Tap" Entry System (Core)
+### 1. The "3-Tap" Entry System
 
 - **Speed:** Log a transaction in < 5 seconds.
-- **Custom Keypad:** Large, dedicated numeric pad (No system keyboard lag).
-- **Smart Category Grid:** Automatically bubbles up your top 3 most-used categories to the top row.
-- **Smart Defaults:** Auto-selects "Today" and "Now".
+- **Custom Keypad:** Large, dedicated numeric pad (no system keyboard lag).
+- **Smart Category Grid:** Automatically surfaces your top 3 most-used categories to the first row.
+- **Smart Defaults:** Auto-selects today's date and your default account.
 
-### 2. The Dashboard (Visuals)
+### 2. The Dashboard
 
-- **Live Balance:** `(Income - Expense) = Current Balance`.
-- **Budget Health Bar:** Color-coded progress bar (Green → Orange → Red) based on monthly spending.
-- **Safe Spend Indicator:** Calculates exactly how much you can spend _per day_ for the rest of the month.
-- **Spending Breakdown:** Simple Pie Chart and "Top Spenders" list.
+- **Live Balance:** Income - Expenses = Current Balance.
+- **Net Worth:** Total across all accounts at a glance.
+- **Budget Health Bar:** Color-coded progress (Green → Amber → Red) based on monthly spending.
+- **Safe Spend Indicator:** Calculates exactly how much you can spend per day for the rest of the month.
+- **Spending Breakdown:** Donut pie chart with category breakdown.
+- **Net Debt Position:** Shows how much you owe vs. how much is owed to you.
 
-### 3. Debt & Lending Tracker
+### 3. Category Insights
 
-- **IOU Management:** Separate tab for "I Owe" vs "Owes Me".
-- **Net Worth Impact:** Shows a "Net Debt Position" card on the dashboard.
-- **Partial Payments:** Track repayments without closing the entire debt.
+- **Detailed Analytics:** Tap any category from the pie chart for a deep dive.
+- **Daily Spending Chart:** Line graph showing spending trends over the month.
+- **Stats Grid:** Key metrics like total spent and daily average.
+- **Filtered Transactions:** All transactions for that category, grouped by date.
 
-### 4. Smart Tutorials (Contextual)
+### 4. Multi-Account Management
 
-- **Onboarding:** "Cold Start" setup to set initial cash balance.
-- **Walkthroughs:** Interactive "Coach Marks" guide users through the FAB, Budget Bar, and Swipe Actions.
-- **Just-in-Time:** Teaches "Swipe to Delete" and "Swipe to add note" only after the _second_ transaction is created.
+- **17 Account Types:** Cash, Bank, Debit Card, Credit Card, Metro Card, Bkash, Nagad, Savings, Investment, DPS, FDR, Rocket, Upay, PayPal, Gift Card, Virtual Card, and Other.
+- **Account Transfers:** Move money between accounts seamlessly.
+- **Per-Account History:** View transactions filtered by account.
 
-### 5. Data & Settings
+### 5. Debt & Lending Tracker
 
-- **PDF Export:** Generate professional, printable transaction reports.
-- **Category Limits:** Set soft monthly limits for specific categories (e.g., Food: ৳5,000).
-- **Offline First:** 100% local data ownership. No servers, no accounts.
-- **Dark Mode:** System-wide support.
+- **IOU Management:** Separate tracking for "I Owe" vs. "Owes Me".
+- **Partial Payments:** Record repayments with a full payment timeline.
+- **Dashboard Integration:** Net Debt Position card on the home screen.
 
-### 6. Budget Planner
+### 6. Savings Goals
 
-- **New Module:** Added BudgetPlannerScreen accessible via Settings.
-- **Architecture:** Implemented a separate Hive Box (budget_plan_box) to ensure planning data never interferes with actual transaction history.
-- **Dynamic Dashboard:** Reused the core Dashboard UI components to visualize "Planned Income" vs. "Planned Expenses."
-- **Custom Inputs:** Users can now assign budgets to specific custom names (Strings) rather than fixed Category Enums, allowing for granular planning (e.g., separating "Groceries" from "Snacks").
+- **Goal Tracking:** Set targets with optional deadlines.
+- **Progress Visualization:** Progress bars with current vs. target amounts.
+- **Incremental Savings:** Add to goals over time with notes.
+- **Monthly Rollover:** Savings carry forward automatically.
+
+### 7. Budget Planner
+
+- **Category-Specific Limits:** Assign monthly budgets to individual categories.
+- **Planned vs. Actual:** Visualize planned income and expenses against reality.
+- **Custom Names:** Assign budgets to custom labels for granular planning (e.g., separating "Groceries" from "Snacks").
+
+### 8. Smart Tutorials
+
+- **Onboarding:** Quick setup to set your initial balance and optional monthly budget.
+- **Coach Marks:** Interactive spotlight walkthrough of the FAB, Budget Bar, Balance Card, and Settings.
+
+### 9. Data & Settings
+
+- **PDF Export:** Generate transaction reports with category breakdown and account balances. Date ranges: All Time, This Month, Last Month, Last 3 Months, or Custom.
+- **9 Default Categories:** Food, Transport, Shopping, Entertainment, Bills, Health, Education, Salary, Other — plus unlimited custom categories.
+- **Category Spending Limits:** Set soft monthly limits per category with visual warnings.
+- **Dark Mode:** Manual toggle between light and dark themes.
+- **Currency Symbol:** Configurable (default: ৳).
+- **Check for Updates:** In-app update checker.
+- **Offline First:** 100% local data. No servers, no accounts, no data leaves your phone.
 
 ---
 
-## 📱 Screenshots
+## Screenshots
 
 <table align="center">
   <tr>
@@ -139,9 +162,7 @@ Most finance apps are **too slow**. They ask for too many details, require inter
 
 ---
 
-## 📥 How to Install (Android)
-
-Since Shonchoy is privacy-focused and open-source, you can install it directly via APK:
+## How to Install (Android)
 
 1.  **Download:** Click the green [**Download APK**] button at the top.
 2.  **Open:** Tap the downloaded file (`Shonchoy_ExpenseTracker.apk`).
@@ -150,15 +171,21 @@ Since Shonchoy is privacy-focused and open-source, you can install it directly v
 
 ---
 
-## 💬 Feedback & Support
+## Feedback & Support
 
 Found a bug? Have a feature request?
 
-- 🐛 [Report an Issue](https://github.com/Ahnaf181419/Expense-Tracker/issues)
-- ⭐ **Star this repo** if you find it useful!
+- [Report an Issue](https://github.com/Ahnaf181419/Expense-Tracker/issues)
+- **Star this repo** if you find it useful!
+
+---
+
+## License
+
+This software is proprietary. See [LICENSE](LICENSE) for details.
 
 ---
 
 <p align="center">
-  Built with ❤️ using <b>Flutter</b>.
+  Built with Flutter by <b>Ahnaf</b>.
 </p>
