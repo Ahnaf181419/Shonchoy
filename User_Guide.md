@@ -1,6 +1,6 @@
-# Shonchoy User Guide
+# Shonchoy — User Guide
 
-> A complete guide to using Shonchoy - your personal expense tracker.
+> A complete guide to Shonchoy, your offline-first expense tracker.
 
 ---
 
@@ -9,14 +9,22 @@
 1. [Getting Started](#1-getting-started)
 2. [Adding Transactions](#2-adding-transactions)
 3. [Viewing Your Data](#3-viewing-your-data)
-4. [Managing Categories](#4-managing-categories)
-5. [Managing Accounts](#5-managing-accounts)
-6. [Budget Tracking](#6-budget-tracking)
-7. [Debt \& Lending](#7-debt--lending)
-8. [Savings Goals](#8-savings-goals)
-9. [Data \& Export](#9-data--export)
-10. [Settings](#10-settings)
-11. [Tips \& Tricks](#11-tips--tricks)
+4. [Mascot Chat](#4-mascot-chat)
+5. [Managing Categories](#5-managing-categories)
+6. [Managing Accounts](#6-managing-accounts)
+7. [Bill Splitter](#7-bill-splitter)
+8. [Subscriptions](#8-subscriptions)
+9. [Savings Goals](#9-savings-goals)
+10. [Budget Planner](#10-budget-planner)
+11. [Debts & Lending](#11-debts--lending)
+12. [App Lock & Security](#12-app-lock--security)
+13. [Themes](#13-themes)
+14. [Data, Backup & Export](#14-data-backup--export)
+15. [Settings](#15-settings)
+16. [Upgrading to Pro](#16-upgrading-to-pro)
+17. [Tips & Tricks](#17-tips--tricks)
+18. [Troubleshooting](#18-troubleshooting)
+19. [Quick Reference](#19-quick-reference)
 
 ---
 
@@ -24,26 +32,24 @@
 
 ### First Launch (Onboarding)
 
-When you first open Shonchoy, you'll see a welcome screen. Here's how to set up:
+When you first open Shonchoy, a short setup gets you tracking in under a minute:
 
-1. **Enter your current balance**
-   - This is the money you currently have (cash in hand + bank balance)
-   - This creates your first "Income" transaction called "Initial Balance"
-   - Your dashboard will immediately show your financial position
+1. **Enter your current balance** — this is the money you have right now (cash + bank). It creates your first income transaction, "Initial Balance," so your dashboard is accurate from second one.
+2. **Set a monthly budget** *(optional)* — your spending target. Change it any time in Settings.
+3. Tap **Get Started**.
 
-2. **Set a monthly budget** (optional)
-   - This is your spending limit for the month
-   - You can change this anytime in Settings
+### The Home Screen
 
-3. Tap **"Get Started"** to begin
+After setup you land on the **Dashboard**, which shows:
 
-### What You'll See
+- Your **balance** for the selected month
+- **Income** and **Expenses** totals
+- **Net worth** across all accounts
+- A **budget health bar** and your daily **safe-to-spend**
+- A **donut chart** of spending by category
+- Your **transaction list**
 
-After onboarding, you land on the **Home Screen** (also called the Dashboard). This shows:
-- Your current balance
-- Income and expenses for the selected month
-- A pie chart of spending by category
-- Your transaction list
+An in-app **tutorial** highlights the key controls on first run — you can replay it from Settings.
 
 ---
 
@@ -51,43 +57,42 @@ After onboarding, you land on the **Home Screen** (also called the Dashboard). T
 
 ### The 3-Tap Quick Entry
 
-Shonchoy is designed to log expenses in under 5 seconds:
+Shonchoy logs an expense in under 5 seconds:
 
 ```
-Tap 1: Tap the + button (FAB) on the home screen
-Tap 2: Enter amount using the number pad
-Tap 3: Tap a category icon → Done!
+Tap 1: Tap the + button (FAB)
+Tap 2: Type the amount
+Tap 3: Tap a category → Saved
 ```
 
 ### Step-by-Step
 
-1. **Open Add Transaction Screen**
-   - Tap the floating + button (FAB) at the bottom right of the home screen
-   - A tutorial will guide you on first visit
+1. **Open the entry screen** — tap the floating **+** button.
+2. **Enter the amount** on the custom keypad.
+   - Need math? Type an expression like `100+50*2` and it evaluates to `200`.
+   - Use `⌫` to delete.
+3. **Choose the type** — **Expense** (default), **Income**, or **Transfer** (appears only with 2+ accounts).
+4. **Pick a category** — tapping one saves instantly. Your top three most-used categories float to the first row, so the ones you need are always within reach.
+5. *(Optional)* **Select an account** — defaults to your chosen default account.
+6. *(Optional)* **Add a note**, set a **date**, or mark it **recurring** (auto-copied each new month).
 
-2. **Enter Amount**
-   - Use the large custom number pad
-   - Tap digits to enter (e.g., 1, 5, 0 for 150)
-   - Use the decimal point (. ) for cents
-   - Tap the backspace (⌫) to correct mistakes
+### Transfers
 
-3. **Choose Type**
-   - **Expense** (default): Money going out
-   - **Income**: Money coming in
-   - Tap the toggle to switch between them
+To move money between accounts:
 
-4. **Select Category**
-   - Tap any category icon to save immediately
-   - **Smart Sorting**: Your top 3 most-used categories appear in the first row
-   - The more you use a category, the higher it moves
+1. Toggle to **Transfer**.
+2. Pick the **From** and **To** accounts.
+3. Enter the amount, and optionally add a **transfer fee**.
 
-5. **Optional: Select Account**
-   - Tap "Account" to select which account. The **Cash** account is selected by default and appears first in the list.
+### Recurring Transactions
 
-6. **Save**
-   - Tapping a category saves the transaction
-   - You'll see a "Saved!" confirmation
-   - The screen closes automatically
+Mark a transaction **recurring** and Shonchoy automatically creates a copy at the start of each new month — no re-entry.
+
+### Edit & Delete with Swipes
+
+- **Swipe right** on a transaction to add or edit a note.
+- **Swipe left** to reveal **Edit** and **Delete**. (Transfers reveal Delete only.)
+- Deleted items go to the **Trash** for 30 days — see [§14](#14-data-backup--export) to undo.
 
 ---
 
@@ -95,69 +100,57 @@ Tap 3: Tap a category icon → Done!
 
 ### Dashboard Overview
 
-The home screen shows your financial summary:
-
-| Element | Description |
-|---------|-------------|
-| **Balance** | Income - Expenses = Your net position |
-| **Income** | Total money received this month |
-| **Expenses** | Total money spent this month |
-| **Net Worth** | Total across all accounts |
+| Element | What it shows |
+|---------|---------------|
+| **Balance** | Income − Expenses for the month |
+| **Net Worth** | Sum across all accounts |
+| **Budget Bar** | How much of your monthly budget is spent (green / amber / red) |
+| **Safe to Spend** | (Budget − Spent) ÷ days left this month |
 
 ### Month Navigation
 
-View past or future months:
-
-- Tap the **left arrow** (←) to go to previous month
-- Tap the **right arrow** (→) to go to next month
-- The month/year displays in the center
+Use the **← / →** arrows to move between months. The current month and year show in the header.
 
 ### Transaction List
 
-Transactions are grouped by date:
+Transactions group by day (**Today**, **Yesterday**, date…). Each row shows the category icon, name, amount (green = income, red = expense), and any note.
 
-- **Today**
-- **Yesterday**
-- **March 10, 2026**
-- etc.
+### Donut Chart
 
-Each transaction shows:
-- Category icon and name
-- Amount (green for income, red for expense)
-- Note (if any)
-
-### Pie Chart
-
-The donut chart shows spending breakdown by category:
-
-- Each slice represents a category
-- Tap a slice to see the percentage
-- Categories with more spending have larger slices
+Each slice is a category, sized by spend. Tap a slice to open **Category Insights**.
 
 ### Category Insights
 
-Tap a category from the pie chart to see detailed insights:
+A deep dive on one category:
 
-- **Hero Card** with category spending stats
-- **Daily Spending Chart** — a line graph showing your daily spending in that category
-- **Insights Stats Grid** — key metrics like total spent and average
-- **Transaction List** — all transactions in that category, grouped by date
-- You can also edit the category directly from this screen via the edit icon in the app bar
+- **Daily spending** line chart
+- **Stats grid** — total, average, largest, % of month
+- **Filtered transaction list**
 
-### Filter Transactions
+### Statistics *(Pro)*
 
-Need to see only income or only expenses?
-
-1. Tap the **filter icon** (funnel) in the Transactions section
-2. Choose: **All**, **Income**, or **Expense**
+Open Statistics for the long view: 12-month income/expense trends, median and 90th-percentile spending, your top merchants, and your five largest transactions in the selected range. (Free users see a preview; upgrade to unlock the full suite — see [§16](#16-upgrading-to-pro).)
 
 ---
 
-## 4. Managing Categories
+## 4. Mascot Chat
+
+Prefer typing to tapping? Open **Chat** and just write naturally:
+
+> _"spent 250 on groceries"_
+> _"salary 45000"_
+
+Shonchoy parses the amount and category and logs it. **Quick-add cards** surface your recurring merchants for one-tap entry, and a raccoon mascot reacts to your spending.
+
+> Free tier: **3 chats per day**. Pro: unlimited.
+
+---
+
+## 5. Managing Categories
 
 ### Default Categories
 
-Shonchoy comes with 9 pre-installed categories:
+Nine come pre-installed:
 
 | Category | Icon | Color |
 |----------|------|-------|
@@ -171,360 +164,271 @@ Shonchoy comes with 9 pre-installed categories:
 | Salary | Wallet | Green |
 | Other | More | Grey |
 
-### Adding a Custom Category
+### Add / Edit / Delete
 
-1. Go to **Settings** → **Categories**
-2. Tap the **+ Add** button
-3. Enter a name (e.g., "Groceries")
-4. Choose an icon
-5. Choose a color
-6. Optionally set a spending limit
-7. Tap **Save**
+From **Settings → Categories**:
 
-### Editing a Category
-
-1. Go to **Settings** → **Categories**
-2. Tap the category you want to edit
-3. Change name, icon, color, or limit
-4. Tap **Save**
-
-### Deleting a Category
-
-1. Go to **Settings** → **Categories**
-2. Tap the category
-3. Tap **Delete** at the bottom
-4. Choose what to do with transactions in this category:
-   - **Reassign** to another category
-   - **Remove category** from transactions
+- **Add** — name, icon, color, and an optional **spending limit**.
+- **Edit** — tap any category to change its details.
+- **Delete** — choose to **reassign** its transactions to another category, or **remove** the category tag entirely.
 
 ### Category Spending Limits
 
-Set a monthly limit for specific categories:
-
-1. Edit a category
-2. Enter a **Spending Limit** amount
-3. The budget bar will track this category separately
-4. When limit is exceeded, the category shows a warning
+Give a category a monthly limit and it warns you when exceeded — with support for daily, weekly, monthly, or yearly intervals and optional rollover of unused budget.
 
 ---
 
-## 5. Managing Accounts
+## 6. Managing Accounts
 
-Track money across different accounts (Cash, Bank, Mobile Money, etc.)
+Track money across every place you keep it.
 
 ### Adding an Account
 
-1. From the home screen, tap **"Manage"** under "My Accounts"
-2. Or go to **Settings** → **Accounts**
-3. Tap the **+ Add Account** button
-4. Enter:
-   - Account name (e.g., "Chase Bank")
-   - Account type (Cash, Bank, Debit Card, Credit Card, Metro Card, Bkash, Nagad, Savings, Investment, DPS, FDR, Rocket, Upay, PayPal, Gift Card, Virtual Card, Other)
-   - Initial balance
-   - Choose an icon and color
-5. Tap **Save**
+1. Go to **Settings → Accounts** (or tap **Manage** on the home accounts row).
+2. Tap **+ Add Account**.
+3. Enter the name, **type**, and starting balance; pick an icon and color.
 
-> **Note**: The "Cash" account is created by default when you first use the app. It is automatically selected when adding transactions.
+### Account Types (currency-aware)
 
-### Viewing Account Balances
+The type list adapts to your currency. With **BDT** selected you get bKash, Nagad, Rocket, Upay, DPS, and FDR; with other currencies you get the global set (Cash, Bank, Debit Card, Credit Card, PayPal, Mobile Wallet, and more).
 
-The home screen shows a horizontal list of your accounts:
+### Credit Cards
 
-- Each account card shows the account name and current balance
-- Tap "Manage" to see all accounts
+For **Credit Card** accounts, set a credit limit, statement balance, minimum payment, and due day. Shonchoy shows your card usage and warns you as you approach the limit.
 
-### Account Transaction History
+### Account History & Transfers
 
-1. From home screen, tap an account card
-2. Or go to **Settings** → **Accounts**
-3. Tap an account to see its transaction history
-
-### Transferring Between Accounts
-
-> **Note**: The Transfer option only appears when you have 2 or more accounts. This ensures both "From" and "To" accounts are available.
-
-1. In Add Transaction, toggle from "Expense" to **"Transfer"**
-2. Select the **From** account
-3. Select the **To** account
-4. Enter the amount
-5. Select a category (optional)
-6. Tap to save
+- Tap an account for its full transaction history.
+- See [§2 Transfers](#transfers) for moving money between accounts.
 
 ---
 
-## 6. Budget Tracking
+## 7. Bill Splitter
 
-### Setting Your Monthly Budget
+Split a bill with friends and figure out who owes whom — with the fewest repayments.
 
-1. Go to **Settings**
-2. Find **Monthly Budget**
-3. Enter your target spending limit
-4. The amount displays in your home currency symbol
+### Create a Group
 
-### Understanding the Budget Bar
+1. Open **Bill Splitter** (from Settings or Tools).
+2. Create a **Group** (persistent) or a **Quick Split** (one-off).
+3. Add participants. ("You" are included automatically.)
 
-The budget progress bar on the home screen shows how much you've spent:
+### Record a Bill
 
-| Color | Meaning |
-|-------|---------|
-| **Green** | Safe - you've spent less than 50% of your budget |
-| **Amber** | Caution - you've spent 50-85% of your budget |
-| **Red** | Danger - you've spent more than 85% of your budget |
+1. Add a bill to the group with a description and total.
+2. Record **who paid how much**.
+3. Choose a split method: **Equal**, **Custom amounts**, **Percentage**, or **Shares**.
 
-### Safe to Spend
+### Settle Up
 
-The budget bar also shows **"Safe to spend"**:
-
-- This is how much you can spend per day for the rest of the month
-- Calculated as: (Budget - Spent) ÷ Days remaining
-
-### Category-Specific Limits
-
-Set limits for individual categories:
-
-1. Go to **Settings** → **Budget Planner**
-2. Select categories to set limits
-3. Enter the limit amount for each
-4. Track progress per category in the budget planner
+Shonchoy calculates everyone's net balance and suggests a **minimal set of settlements** — the smallest number of payments that clears all debts. Optionally link a settlement to an expense in your main ledger.
 
 ---
 
-## 7. Debt & Lending
+## 8. Subscriptions
 
-Track money you owe others or money owed to you.
+Never lose track of a recurring charge.
 
-### Adding a Debt (Money You Owe)
+### Add a Subscription
 
-1. Go to **Settings** → **Debts & Lending**
-2. Tap **"+ Add Debt"**
-3. Select **"I Owe"**
-4. Enter:
-   - Person's name
-   - Total amount owed
-   - (Optional) Due date
-   - (Optional) Note
-5. Tap **Save**
+1. Open **Subscriptions** (from Settings or Tools).
+2. Tap **+** and enter the name, price, and **billing cycle** (every N days/weeks/months/years).
+3. Optionally add a **trial end date**, notes, and a payment method.
 
-### Adding a Lend (Money Owed to You)
+### Auto-Record
 
-1. Go to **Settings** → **Debts & Lending**
-2. Tap **"+ Add Debt"**
-3. Select **"Owes Me"**
-4. Enter:
-   - Person's name
-   - Total amount
-   - (Optional) Due date
-   - (Optional) Note
-5. Tap **Save**
+On each renewal date, Shonchoy can automatically create the expense for you (skipped during a free trial). Missed periods while the app was closed are caught up automatically.
 
-### Recording a Payment
+### Lifecycle
 
-When you pay back or receive payment:
+- **Active** — bills normally.
+- **Paused** — freezes billing.
+- **Cancelled** — stops billing but keeps history.
 
-1. Go to **Settings** → **Debts & Lending**
-2. Tap on the debt/lend
-3. Tap **"+ Record Payment"**
-4. Enter the payment amount
-5. Optionally add a note
-6. Tap **Save**
-
-### Viewing Debt Status
-
-1. Go to **Settings** → **Debts & Lending**
-2. Tap any debt/lend
-3. See:
-   - Original amount
-   - Amount remaining
-   - Payment history (timeline)
-   - Mark as settled when complete
-
-### Net Debt Position
-
-The home screen shows your **Net Debt Position**:
-
-- Green: You're owed more than you owe
-- Red: You owe more than you're owed
-- Grey: All settled
+The dashboard card shows your monthly and yearly subscription burn and the next renewal.
 
 ---
 
-## 8. Savings Goals
+## 9. Savings Goals
 
-Create savings targets and track progress.
+1. Open **Savings** (piggy-bank icon in the home app bar).
+2. Tap **+ Add Goal** — name it, set a target.
+3. **Deposit** or **Withdraw** with a note; each move is logged.
 
-### Creating a Savings Goal
-
-1. Tap the **savings icon** (piggy bank) in the home screen app bar
-2. Tap **"+ Add Goal"**
-3. Enter:
-   - Goal name (e.g., "Vacation Fund")
-   - Target amount
-   - (Optional) Target date
-4. Tap **Save**
-
-### Adding to Savings
-
-1. Open the savings dashboard
-2. Tap on a goal
-3. Tap **"+ Add Savings"**
-4. Enter the amount
-5. Optionally add a note
-6. Tap **Save**
-
-### Viewing Progress
-
-The savings dashboard shows:
-
-- Each goal with a progress bar
-- Current amount vs. target
-- Percentage complete
-
-### Monthly Rollover
-
-Savings goals automatically roll over each month:
-
-- Current amount becomes the new starting point
-- Track progress over time
+Traffic-light progress bars (red < 20%, amber 20–60%, green > 60%) keep you motivated. Goals roll over month to month.
 
 ---
 
-## 9. Data & Export
+## 10. Budget Planner
 
-### Exporting to PDF
+Zero-based budgeting: give every dollar a job.
 
-Generate a report of your transactions:
+1. Open **Budget Planner** (from Settings).
+2. Add **planned income** and **planned expense** items with custom names.
+3. The planner shows your **unassigned balance** — the gap between planned income and planned expenses.
+4. A pie chart compares planned expenses at a glance.
 
-1. Go to **Settings**
-2. Tap **"Export to PDF"**
-3. Select the date range:
-   - **All Time** — all historical transactions
-   - **This Month** — current calendar month
-   - **Last Month** — previous calendar month
-   - **Last 3 Months** — last 3 full months
-   - **Custom Range** — pick a start and end date
-4. The report includes transactions, category breakdown, and account balances
-5. Share via email, messaging, or save to files
-
-### Resetting App Data
-
-Want to start fresh?
-
-1. Go to **Settings**
-2. Scroll to the bottom
-3. Tap **"Reset All Data"**
-4. Confirm the warning
-5. **Warning**: This deletes ALL data permanently!
+Pair this with per-category limits ([§5](#category-spending-limits)) for fine control.
 
 ---
 
-## 10. Settings
+## 11. Debts & Lending
 
-### Accessing Settings
+Track money you owe and money owed to you.
 
-Tap the **settings icon** (gear) in the home screen app bar.
+1. Open **Debts & Lending**.
+2. Tap **+ Add Debt** and choose **I Owe** or **Owes Me**.
+3. Enter the person, amount, optional due date, and note.
 
-### Available Options
-
-| Setting | Description |
-|---------|-------------|
-| **Dark Mode** | Toggle between light and dark theme |
-| **Currency** | Change the currency symbol (default: ৳) |
-| **Monthly Budget** | Set your monthly spending limit |
-| **Accounts** | Manage your accounts |
-| **Categories** | Manage transaction categories |
-| **Budget Planner** | Set category-specific limits |
-| **Debts & Lending** | Track loans and borrowing |
-| **Export to PDF** | Generate financial reports |
-| **Reset All Data** | Delete all app data |
-| **Check for Updates** | Manually check for app updates |
+For repayments, open a debt and **Record a Payment** with an amount and note. Each debt keeps a full payment timeline and can be marked **settled**. The dashboard's **Net Debt Position** card summarizes where you stand.
 
 ---
 
-## 11. Tips & Tricks
+## 12. App Lock & Security
 
-### Swipe to Delete
+Protect Shonchoy with a PIN or your fingerprint/face.
 
-Made a mistake? Swipe a transaction right-to-left to delete it:
+1. Go to **Settings → Security**.
+2. Enable **App Lock** and set a 4-digit PIN.
+3. Optionally enable **Biometric** unlock.
 
-1. Swipe the transaction **right-to-left** (←)
-2. A delete confirmation dialog appears
-3. Confirm to delete the transaction
+Your PIN is stored as a **salted SHA-256 hash** in your device's secure hardware storage (Android Keystore / iOS Keychain) — never in plain text. Repeated wrong attempts trigger an escalating lockout (5s → 10s → 30s → 60s → 5min). The app re-locks when it returns from the background.
 
-### Swipe to Add Note
-
-Need to add a note?
-
-1. Swipe the transaction **left-to-right** (→)
-2. A note dialog appears
-3. Add or change the note
-4. Tap **Save**
-
-### Smart Categories
-
-The app learns your habits:
-
-- Categories you use most appear first
-- The more you use a category, the higher it moves up
-- This makes logging faster over time
-
-### Dark Mode
-
-Switch between light and dark themes:
-
-1. Go to **Settings**
-2. Toggle **Dark Mode** on or off
-
-### Offline First
-
-Shonchoy works completely offline:
-
-- All data stored on your device
-- No internet required
-- No account needed
-- Your data never leaves your phone
+**Forgot your PIN?** Keep entering attempts — after several wrong tries a **"Forgot PIN?"** link appears that lets you reset the lock.
 
 ---
 
-## Troubleshooting
+## 13. Themes
 
-### App Won't Open
+1. Go to **Settings → Theme**.
+2. Pick from **Fresh Teal**, **Midnight Ocean**, **Cozy Walnut**, or **Iris Lavender**.
+3. Toggle **Dark Mode** on or off.
 
-1. Force close and reopen
-2. Restart your phone
-3. Uninstall and reinstall (data will be lost)
-
-### Transactions Don't Appear
-
-1. Check you're viewing the correct month
-2. Use the arrows to navigate months
-3. Check if filtered to "Income" or "Expense" only
-
-### Budget Not Working
-
-1. Ensure monthly budget is set in Settings
-2. Check that spending is in the current month
-
-### Need Help?
-
-- Contact the developer (m.ahnaf.sarker@gmail.com)
+**Fresh Teal** is free; the other three themes are part of **Pro** (see [§16](#16-upgrading-to-pro)).
 
 ---
 
-## Quick Reference
+## 14. Data, Backup & Export
 
-| Action | How To |
-|--------|--------|
-| Add expense | FAB → Amount → Category |
-| Add income | FAB → Amount → Toggle to Income → Category |
-| Delete transaction | Swipe right-to-left (←) |
-| Add/edit note | Swipe left-to-right (→) |
-| Change month | Tap arrows in balance header |
-| View accounts | Tap "Manage" on home |
-| Add account | Settings → Accounts → + |
-| Set budget | Settings → Monthly Budget |
-| Export data | Settings → Export to PDF |
-| Dark mode | Settings → Dark Mode |
+### CSV Import / Export
+
+- **Export** creates a full backup (accounts, categories, transactions, debts, savings, subscriptions) as a CSV file you can share or save.
+- **Import** restores from a backup file. Missing accounts and categories are created automatically. *(Free tier imports are subject to the account/category limits — see [§16](#16-upgrading-to-pro).)*
+
+### PDF Reports
+
+Generate a polished report (summary, category breakdown, account balances, full transaction table) for **All Time**, **This Month**, **Last Month**, **Last 3 Months**, or a **Custom range**.
+
+### Google Drive Backup *(Pro)*
+
+Encrypt and back up your data to **your own** Google Drive — nothing ever touches Shonchoy's servers. Configure it under **Settings → Cloud Backup**.
+
+### Trash (Undo)
+
+Anything you delete goes to the **Trash** for **30 days**, where you can restore it (with side effects reversed) or purge it for good. Open Trash from Settings.
+
+### Reset All Data
+
+To start fresh: **Settings → Reset All Data**. This permanently deletes everything — back up first.
 
 ---
 
-*Shonchoy - Stop guessing where your money went!*
+## 15. Settings
+
+Tap the **gear** icon on the home screen.
+
+| Setting | What it does |
+|---------|--------------|
+| **Profile** | Your name and avatar |
+| **Dark Mode** | Toggle dark theme |
+| **Theme** | Pick one of four themes (3 are Pro) |
+| **Currency** | Change currency (drives account types) |
+| **Monthly Budget** | Set your spending target |
+| **Haptics** | Toggle vibration feedback |
+| **Spending Humor** | Toggle witty post-spend messages |
+| **App Lock / Biometric** | PIN + fingerprint/face protection |
+| **Accounts** | Manage accounts |
+| **Categories** | Manage categories |
+| **Bill Splitter** | Split bills with friends |
+| **Subscriptions** | Track recurring payments |
+| **Savings** | Savings goals |
+| **Budget Planner** | Zero-based budgeting |
+| **Debts & Lending** | Loans and IOUs |
+| **Cloud Backup** *(Pro)* | Google Drive backup |
+| **Export / Import** | CSV and PDF tools |
+| **Trash** | Restore or purge deleted items |
+| **Upgrade to Pro** | See [§16](#16-upgrading-to-pro) |
+
+---
+
+## 16. Upgrading to Pro
+
+Pro unlocks the limits and adds the power features:
+
+| | Free | Pro |
+|---|:---:|:---:|
+| Log expenses & income | Unlimited | Unlimited |
+| Accounts | 5 | ∞ |
+| Categories | 20 | ∞ |
+| Savings goals | 1 | ∞ |
+| Subscriptions | 1 | ∞ |
+| Mascot chat | 3 / day | ∞ |
+| PDF reports | 1 / month | ∞ |
+| Themes | 1 (Fresh Teal) | All 4 |
+| Statistics | — | ✓ |
+| Google Drive backup | — | ✓ |
+
+Open **Settings → Upgrade to Pro** to purchase via Google Play Billing. Your purchase is tied to your Google account.
+
+---
+
+## 17. Tips & Tricks
+
+- **Swipe right** on a transaction → add/edit a note.
+- **Swipe left** → Edit or Delete.
+- **Type math** in the amount field — `100+50*2` becomes `200`.
+- **Smart categories** — the more you use a category, the higher it climbs.
+- **Mark recurring** so monthly bills clone themselves.
+- **Offline first** — core tracking needs no internet and no account; only the Pro purchase and optional Google Drive backup use a connection. No data leaves your phone unless you back it up.
+
+---
+
+## 18. Troubleshooting
+
+**App won't open**
+Force close and reopen; restart your phone; reinstall (back up first — your data is local).
+
+**Transactions don't appear**
+Check the month with the ← / → arrows; check you're not filtered to Income/Expense only.
+
+**Budget not working**
+Ensure a monthly budget is set in Settings and that spending falls in the current month.
+
+**Forgot PIN**
+Keep entering wrong PINs until the **"Forgot PIN?"** link appears (after several attempts). Tap it, confirm the reset, then set a new PIN in **Settings → Security**.
+
+**Need help?**
+- Report it on GitHub: **[github.com/Ahnaf181419/Shonchoy/issues](https://github.com/Ahnaf181419/Shonchoy/issues)**
+- Or email the developer: **muhammad.ahnaf.sarker@gmail.com**
+
+---
+
+## 19. Quick Reference
+
+| Action | How |
+|--------|-----|
+| Add expense | **+** → amount → category |
+| Add income | **+** → amount → toggle Income → category |
+| Transfer | **+** → toggle Transfer → From/To → amount |
+| Edit / delete | Swipe a transaction **left** |
+| Add note | Swipe a transaction **right** |
+| Change month | Tap ← / → in the header |
+| View accounts | Tap **Manage** on home |
+| Split a bill | Settings → Bill Splitter |
+| Lock the app | Settings → Security → App Lock |
+| Export data | Settings → Export / Import |
+| Back up to Drive | Settings → Cloud Backup *(Pro)* |
+
+---
+
+*Shonchoy — Stop guessing where your money went.*

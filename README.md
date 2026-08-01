@@ -1,113 +1,132 @@
-# Shonchoy: The Everyday Expense Tracker
+# Shonchoy — The Everyday Expense Tracker
 
 <p align="center">
-  <img src="assets/Shonchoy.png" width = "150" height = "150" alt="Shonchoy App Icon">
-</p>
-<p align="center">
-  <h2 align="center">Stop guessing where your money went!</h2>
+  <img src="assets/Shonchoy.png" width="140" height="140" alt="Shonchoy app icon">
 </p>
 
 <p align="center">
-  <b>Fast • Offline • Frictionless</b><br>
-  The only finance app designed for the "3-Tap Rule": Log an expense in under 5 seconds.
+  <b>Stop guessing where your money went!</b><br>
+  <i>Fast • Offline • Frictionless</i>
 </p>
 
-<br>
+<p align="center">
+  A finance app built for the <b>"3-Tap Rule"</b> — log an expense in under 5 seconds.
+</p>
 
 <p align="center">
-  <a href="https://github.com/Ahnaf181419/Shonchoy/raw/main/Shonchoy_ExpenseTracker.apk">
-    <img src="https://img.shields.io/badge/Download_APK-Android-3DDC84?style=for-the-badge&logo=android&logoColor=white&height=40" height="45" alt="Download APK">
+  <a href="https://play.google.com/store/apps/details?id=dev.frostflux.shonchoy">
+    <img src="https://img.shields.io/badge/Google_Play-Get_it_on-34A853?style=for-the-badge&logo=googleplay&logoColor=white" height="40" alt="Get it on Google Play">
   </a>
 </p>
+
 <p align="center">
-  <small><i>v3.0.0 • No Account Required</i></small>
+  <img src="https://img.shields.io/badge/Platform-Android-3DDC84?style=flat-square&logo=android&logoColor=white" alt="Android">
+  <img src="https://img.shields.io/badge/Flutter-%2302569B.svg?style=flat-square&logo=flutter&logoColor=white" alt="Flutter">
+  <img src="https://img.shields.io/badge/Dart-%230175C2.svg?style=flat-square&logo=dart&logoColor=white" alt="Dart">
+  <img src="https://img.shields.io/badge/License-Proprietary-6c757d?style=flat-square" alt="Proprietary">
+  <img src="https://img.shields.io/badge/Offline_First-100%25-00897B?style=flat-square" alt="Offline first">
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white" alt="Flutter">
-  <img src="https://img.shields.io/badge/dart-%230175C2.svg?style=for-the-badge&logo=dart&logoColor=white" alt="Dart">
+  <img src="assets/SS/1.png" width="720" alt="Shonchoy cover">
 </p>
 
 ---
 
 ## Why Another Expense Tracker?
 
-Most finance apps are **too slow**. They ask for too many details, require internet, or force you to create an account. Shonchoy ensures your information remains completely private.
+Most finance apps are **too slow**. They demand details you don't have, force you to create an account, and stop working the moment you lose signal. Your information isn't really yours.
 
-**Shonchoy is different.** It is built for **velocity**.
+**Shonchoy is built for velocity.**
 
-- **No Login:** Open the app and start immediately.
-- **No Loading:** Everything is stored on your phone.
-- **No Ads:** Just you and your finances.
+- **No login** — open the app and start immediately.
+- **No loading** — everything lives on your phone.
+- **No ads, no trackers** — just you and your money.
 
 > _"If logging a coffee takes more than 5 seconds, you won't do it. Shonchoy fixes that."_
 
 ---
 
+## What's New in v4.0.0
+
+A major rebuild. Everything below is new or significantly reworked since v3:
+
+- **Bill Splitter** — split a bill four ways, settle up with the fewest transactions.
+- **Subscriptions** — track recurring payments; never miss a renewal.
+- **App Lock + Biometric** — PIN + fingerprint/face protection.
+- **4 Themes** — Fresh Teal, Midnight Ocean, Cozy Walnut, Iris Lavender.
+- **Mascot Chat** — log an expense by just typing it.
+- **Statistics** — trends, percentiles, top merchants.
+- **Google Drive Backup** — encrypted backups to _your_ own Drive.
+- **CSV Import/Export** + **Trash (undo)** + a built-in **expression calculator**.
+
+---
+
 ## Features
 
-### 1. The "3-Tap" Entry System
+### The 3-Tap Entry
+Type an amount, tap a category, done. A custom keypad, an expression calculator (`100+50*2` → `200`), and a smart grid that floats your three most-used categories to the top row mean logging is muscle memory within a day.
 
-- **Speed:** Log a transaction in < 5 seconds.
-- **Custom Keypad:** Large, dedicated numeric pad (no system keyboard lag).
-- **Smart Category Grid:** Automatically surfaces your top 3 most-used categories to the first row.
-- **Smart Defaults:** Auto-selects today's date and your default account.
+### Dashboard
+Live balance, net worth across accounts, a color-coded budget bar (green → amber → red), a daily **safe-to-spend** figure, and a donut breakdown of where your money went this month — all on one screen.
 
-### 2. The Dashboard
+### Multi-Account Management
+Cash, banks, cards, and mobile wallets. Account types are **currency-aware** — set BDT and you get bKash, Nagad, Rocket, Upay, DPS, and FDR out of the box. Credit cards get their own fields: limit, statement balance, minimum payment, and due day. Transfer between accounts (with an optional fee), and tap any account for its full history.
 
-- **Live Balance:** Income - Expenses = Current Balance.
-- **Net Worth:** Total across all accounts at a glance.
-- **Budget Health Bar:** Color-coded progress (Green → Amber → Red) based on monthly spending.
-- **Safe Spend Indicator:** Calculates exactly how much you can spend per day for the rest of the month.
-- **Spending Breakdown:** Donut pie chart with category breakdown.
-- **Net Debt Position:** Shows how much you owe vs. how much is owed to you.
+### Bill Splitter
+Create a group (or a one-off Quick Split), record who paid how much, and split equally, by custom amounts, by percentage, or by shares. Shonchoy then computes the **minimum set of transactions** to settle everyone up.
 
-### 3. Category Insights
+### Subscriptions
+Track every recurring payment with custom cycles (every N days/weeks/months/years), trial periods, and active/paused/cancelled states. See your monthly and yearly burn at a glance, with auto-recorded expenses on each renewal.
 
-- **Detailed Analytics:** Tap any category from the pie chart for a deep dive.
-- **Daily Spending Chart:** Line graph showing spending trends over the month.
-- **Stats Grid:** Key metrics like total spent and daily average.
-- **Filtered Transactions:** All transactions for that category, grouped by date.
+### Savings Goals
+Set named targets, watch traffic-light progress bars fill, and deposit or withdraw with a full activity log. Goals carry over month to month.
 
-### 4. Multi-Account Management
+### Budget Planner
+Zero-based budgeting: assign every dollar a job. Set category-specific limits with daily/weekly/monthly/yearly intervals and optional rollover, then watch planned vs. actual side by side.
 
-- **17 Account Types:** Cash, Bank, Debit Card, Credit Card, Metro Card, Bkash, Nagad, Savings, Investment, DPS, FDR, Rocket, Upay, PayPal, Gift Card, Virtual Card, and Other.
-- **Account Transfers:** Move money between accounts seamlessly.
-- **Per-Account History:** View transactions filtered by account.
+### Debts & Lending
+Track money you owe and money owed to you. Record partial payments, see a full timeline, and get due-soon highlights. The dashboard shows your net debt position in one card.
 
-### 5. Debt & Lending Tracker
+### Category Insights
+Tap any slice of the donut for a deep dive: a daily spending line chart, key stats (average, largest, % of total), and every transaction in that category.
 
-- **IOU Management:** Separate tracking for "I Owe" vs. "Owes Me".
-- **Partial Payments:** Record repayments with a full payment timeline.
-- **Dashboard Integration:** Net Debt Position card on the home screen.
+### Statistics *(Pro)*
+Go beyond the month: 12-month income/expense trends, median and 90th-percentile spending, your top merchants, and your five largest transactions in the range.
 
-### 6. Savings Goals
+### Mascot Chat
+Just type — _"spent 250 on groceries"_ — and Shonchoy parses the amount and category. Quick-add cards surface your recurring merchants. A raccoon mascot reacts to your spending with a bit of personality.
 
-- **Goal Tracking:** Set targets with optional deadlines.
-- **Progress Visualization:** Progress bars with current vs. target amounts.
-- **Incremental Savings:** Add to goals over time with notes.
-- **Monthly Rollover:** Savings carry forward automatically.
+### App Lock & Security
+An optional 4-digit PIN (stored as a salted hash in secure hardware storage) plus biometric unlock. Repeated wrong attempts trigger an escalating lockout.
 
-### 7. Budget Planner
+### Themes
+Four hand-tuned themes (Fresh Teal, Midnight Ocean, Cozy Walnut, Iris Lavender) plus a dark-mode toggle. **Fresh Teal is free**; the other three are part of Pro.
 
-- **Category-Specific Limits:** Assign monthly budgets to individual categories.
-- **Planned vs. Actual:** Visualize planned income and expenses against reality.
-- **Custom Names:** Assign budgets to custom labels for granular planning (e.g., separating "Groceries" from "Snacks").
+### Data & Backup
+- **CSV import/export** — full backups that survive a phone reset.
+- **PDF reports** — transaction history with category breakdown and account balances.
+- **Google Drive backup** *(Pro)* — encrypted, to your own Drive. Nothing ever touches our servers.
+- **Trash** — delete is undoable for 30 days.
 
-### 8. Smart Tutorials
+---
 
-- **Onboarding:** Quick setup to set your initial balance and optional monthly budget.
-- **Coach Marks:** Interactive spotlight walkthrough of the FAB, Budget Bar, Balance Card, and Settings.
+## Free vs Pro
 
-### 9. Data & Settings
+| | Free | Pro |
+|---|:---:|:---:|
+| Log expenses & income | **Unlimited** | **Unlimited** |
+| Accounts | 5 | ∞ |
+| Categories | 20 | ∞ |
+| Savings goals | 1 | ∞ |
+| Subscriptions | 1 | ∞ |
+| Mascot chat | 3 / day | ∞ |
+| PDF reports | 1 / month | ∞ |
+| Themes | 1 (Fresh Teal) | All 4 |
+| Statistics | — | ✓ |
+| Google Drive backup | — | ✓ |
 
-- **PDF Export:** Generate transaction reports with category breakdown and account balances. Date ranges: All Time, This Month, Last Month, Last 3 Months, or Custom.
-- **9 Default Categories:** Food, Transport, Shopping, Entertainment, Bills, Health, Education, Salary, Other — plus unlimited custom categories.
-- **Category Spending Limits:** Set soft monthly limits per category with visual warnings.
-- **Dark Mode:** Manual toggle between light and dark themes.
-- **Currency Symbol:** Configurable (default: ৳).
-- **Check for Updates:** In-app update checker.
-- **Offline First:** 100% local data. No servers, no accounts, no data leaves your phone.
+Upgrade anytime from **Settings → Upgrade to Pro** in the app.
 
 ---
 
@@ -115,77 +134,56 @@ Most finance apps are **too slow**. They ask for too many details, require inter
 
 <table align="center">
   <tr>
-    <td align="center">
-      <img src="assets/SS/01.jpeg" width="250" alt="Screen 1">
-    </td>
-    <td align="center">
-      <img src="assets/SS/02.jpeg" width="250" alt="Screen 2">
-    </td>
-    <td align="center">
-      <img src="assets/SS/03.jpeg" width="250" alt="Screen 3">
-    </td>
+    <td align="center"><img src="assets/SS/2.png" width="260" alt="Home dashboard"></td>
+    <td align="center"><img src="assets/SS/3.png" width="260" alt="Add transaction"></td>
+    <td align="center"><img src="assets/SS/4.png" width="260" alt="Accounts"></td>
   </tr>
   <tr>
-    <td align="center">
-      <img src="assets/SS/04.jpeg" width="250" alt="Screen 4">
-    </td>
-    <td align="center">
-      <img src="assets/SS/05.jpeg" width="250" alt="Screen 5">
-    </td>
-    <td align="center">
-      <img src="assets/SS/06.jpeg" width="250" alt="Screen 6">
-    </td>
+    <td align="center"><img src="assets/SS/5.png" width="260" alt="Bill splitter"></td>
+    <td align="center"><img src="assets/SS/6.png" width="260" alt="Subscriptions"></td>
+    <td align="center"><img src="assets/SS/7.png" width="260" alt="Savings goals"></td>
   </tr>
   <tr>
-    <td align="center">
-      <img src="assets/SS/07.jpeg" width="250" alt="Screen 7">
-    </td>
-    <td align="center">
-      <img src="assets/SS/08.jpeg" width="250" alt="Screen 8">
-    </td>
-    <td align="center">
-      <img src="assets/SS/09.jpeg" width="250" alt="Screen 9">
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <img src="assets/SS/10.jpeg" width="250" alt="Screen 10">
-    </td>
-    <td align="center">
-      <img src="assets/SS/11.jpeg" width="250" alt="Screen 11">
-    </td>
-    <td align="center">
-      <img src="assets/SS/12.jpeg" width="250" alt="Screen 12">
-    </td>
+    <td align="center"><img src="assets/SS/8.png" width="260" alt="Statistics"></td>
+    <td align="center"><img src="assets/SS/9.png" width="260" alt="Mascot chat"></td>
+    <td align="center"><img src="assets/SS/10.png" width="260" alt="Settings"></td>
   </tr>
 </table>
 
 ---
 
-## How to Install (Android)
+## Get It
 
-1.  **Download:** Click the green [**Download APK**] button at the top.
-2.  **Open:** Tap the downloaded file (`Shonchoy_ExpenseTracker.apk`).
-3.  **Install:** If prompted, allow "Install from Unknown Sources" (this is standard for apps outside the Play Store).
-4.  **Enjoy:** Start tracking in seconds!
+Shonchoy is **[available on Google Play](https://play.google.com/store/apps/details?id=dev.frostflux.shonchoy)** — the recommended way to install (auto-updates, Pro upgrade, and full support).
+
+1. Open the **[Google Play listing](https://play.google.com/store/apps/details?id=dev.frostflux.shonchoy)**.
+2. Tap **Install**.
+3. Set your starting balance — and you're tracking.
+
+---
+
+## Privacy
+
+Shonchoy is offline-first. Your transactions, accounts, and budgets never leave your device unless **you** explicitly export or back them up. Read the full [Privacy Policy](privacy-policy.html).
 
 ---
 
 ## Feedback & Support
 
-Found a bug? Have a feature request?
+Found a bug? Have an idea?
 
-- [Report an Issue](https://github.com/Ahnaf181419/Expense-Tracker/issues)
-- **Star this repo** if you find it useful!
+- [Report an issue](https://github.com/Ahnaf181419/Shonchoy/issues)
+- **Star** this repo if Shonchoy helps you.
 
 ---
 
 ## License
 
-This software is proprietary. See [LICENSE](LICENSE) for details.
+Proprietary. See [LICENSE](LICENSE) for details.
 
 ---
 
 <p align="center">
-  Built with Flutter by <b>Ahnaf</b>.
+  Built with Flutter by <b>Ahnaf</b>.<br>
+  <i>Stop guessing where your money went.</i>
 </p>
